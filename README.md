@@ -1,7 +1,7 @@
 # AI-Model-data-curation-and-training
 Python and text files showing the data curation process, model training, and finally model interaction.
 
-Start at File_Index_.md
+Start at File_Index_.md, then see "Data Curation and model training and interaction"
 
 This project is for the purpose of creating a non-agentic LLM that will answer a pentester/site auditor's 
 questions without preachy sermons or admonishments, i.e. it treats the user like an adult who is responsible 

@@ -1,0 +1,33 @@
+
+** Utilized text files, python scripts, Runpod, Huggingface, mitre, CISA, and vulncheck **
+
+
+1) First I downloaded mitre enterprise and ics info using "download_mitre.py"
+
+2) Next I blended the two using "build_dataset.py" and formatted that with "format_dataset.py" to make "mitre_example_.txt"
+
+3) Next I used "download_cisa_kev.py" to download "CISA_example_.txt"
+
+4) Next I used "download_vc_kev_.py" to download "vuln_check_example_.txt"
+
+5) Next I used "vc_and_cisa_formating_script_.py" to combine "CISA_example_.txt + vuln_check_example_.txt" into "ics_audit_training_dataset_example_.txt",
+the full training dataset contains 6,891 prompt/response entries.
+
+6) Next I used "mitre_and_vc_and_CISA_shuffle_and_blend_.py" to blend the three datasets into "runpod_training_dataset_example_.txt"
+
+7) I got a copy of nova cybersec 24B model and abliterated it using Heretic (this is a crucial step that took FOUR RTX 6000 Pro Blackwell cards, each with 96GB of VRAM, just over two hours to process)
+
+8) I then trained the abliterated model on the "ics_audit_training_dataset_example_.txt" using "training_instructions.py"
+
+9) Finally, I chatted with the model using "chat_standalone.py" (see "chat_question_and_answer_session_.txt").
+I intentionally kept the chat relatively vague, I'm just showing that the models output lacks guardrails and sermons.
+
+
+
+ 
+
+
+
+
+
+
